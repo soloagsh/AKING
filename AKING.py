@@ -1,4 +1,4 @@
-import os,dz,rsa
+import os,dz
 def banner():
         os.system('clear')
         print("""    ###    ##    ## #### ##    ##  ######
@@ -23,6 +23,7 @@ def Main():
     print('==========================================')
     i = input('[•] Choose : ')
     if ('1') in i:
+        import rsa
         rsa.mysecurity()
     elif ('2') in i:
         dz._login()
